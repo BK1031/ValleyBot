@@ -1,3 +1,3 @@
 public class Constants {
-    static String token = "NjI1NDE2MzUxMjI1MjE3MDg1.Xa3sPQ.88eGzC15J4bt184_4JKFlJavlVE";
+    static String token = "NjI1NDE2MzUxMjI1MjE3MDg1.Xa33gA.1Yxejj8mx4n0GlomGx9uvt7OvrQ";
 }
