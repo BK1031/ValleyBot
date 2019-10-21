@@ -15,6 +15,7 @@ import javax.security.auth.login.LoginException;
 import java.util.List;
 
 public class Main extends ListenerAdapter {
+
     public static void main(String[] args) throws LoginException {
         CommandClientBuilder commandClientBuilder = new CommandClientBuilder();
         //our prefix is !!
@@ -24,8 +25,7 @@ public class Main extends ListenerAdapter {
         commandClientBuilder.addCommand(new AddRole());
 
         JDABuilder builder = new JDABuilder(AccountType.BOT);
-        String token = "NjI1NDE2MzUxMjI1MjE3MDg1.Xa0kiQ.DknQRLJbf60J6rl6rycd7t8w0vg";
-        builder.setToken(token);
+        builder.setToken(Constants.token);
         builder.addEventListener(new Main());
         builder.buildAsync();
     }
